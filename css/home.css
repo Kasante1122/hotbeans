@@ -1,0 +1,194 @@
+/* Add/Update these styles in your CSS */
+.homepage-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Essential body reset */
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Nav */
+.navbar {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    font-weight: 400;
+    letter-spacing: 1px;
+    
+}
+
+.lead{
+    color: rgb(17, 151, 122);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-brand-text{
+    size: 20px;
+    font-size: x-small;
+}
+
+
+.nav-link {
+    font-weight: 500;
+    margin: 0 15px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #00ff88 !important;
+
+}
+
+/* Main Content */
+.main-content {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: rgb(30, 210, 216);
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text {
+    max-width: 800px;
+    animation: fadeInUp 3s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.display-1 {
+    font-size: 4.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #00ff88, #00b4ff);
+    border: none;
+    padding: 1rem 2rem;
+    transition: transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+}
+
+
+/* Responsivess*/
+@media (max-width: 992px) {
+    .display-1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .display-1 {
+        font-size: 2.5rem;
+    }
+    .hero-text {
+        text-align: center;
+    }
+    .d-md-flex {
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .display-1 {
+        font-size: 2rem;
+    }
+    .lead {
+        font-size: 1rem;
+    }
+}
+
+
+/* Update the Learn More button */
+.btn-outline-light {
+    color: #000 !important; /* Black text */
+    border-color: #ffffff !important; /* Black border */
+    font-weight: 500;
+}
+.btn-primary{
+    border-color: #ffffff !important;
+}
+
+.btn-outline-light:hover {
+    background: #0f0f0f !important;
+    color: #fff !important; /* White text on hover */
+}
+
+/* Update navigation links */
+.nav-link {
+    color: #000 !important; /* Black text */
+    font-weight: 500 !important; /* Slightly bold */
+    letter-spacing: 0.5px;
+}
+
+.nav-link:hover {
+    color: #00ff88 !important; /* Keep hover effect */
+}
+
+/* For mobile menu */
+.offcanvas-body .nav-link {
+    color: #000 !important; /* Black text in mobile menu */
+}
+
+/* Active state */
+.nav-link.active {
+    font-weight: 600 !important;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+
+
+
+/* Add this to your existing navbar styles */
+.navbar {
+    border-radius: 20px 20px 20px 20px; /* Only rounds bottom corners */
+    margin: 10px 15px 0 15px; /* 10px top margin */
+    width: calc(100% - 30px); /* Compensates for horizontal margins */
+    top: 0; /* Reset fixed positioning */
+}
+
+/* Mobile adjustment */
+@media (max-width: 992px) {
+    .navbar {
+        margin: 0; /* Full width on mobile */
+        width: 100%;
+        border-radius:15px; /* Square corners */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
